@@ -1,7 +1,8 @@
-import 'package:ecommerceproject/loginpage/widget/custombox.dart';
+
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
-import 'package:rive/rive.dart';
+
+
+import '../../widget/custombox.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -44,7 +45,6 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.all(15),
                     child:Text("Express Login via Google and Facebook",style:TextStyle(fontSize: 15)),
                   ),
-
                   SizedBox(height:10),
 
                   Padding(
@@ -57,7 +57,6 @@ class _LoginPageState extends State<LoginPage> {
                       ],
                     ),
                   ),
-
                   Divider(
                       thickness: 4,
                       height:30,
@@ -84,6 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                         padding: const EdgeInsets.all(10),
                         color:Colors.yellow.shade100,
                         child:TextFormField(
+                          obscureText: true,
                           decoration: InputDecoration(
                               border: InputBorder.none,
                               hintText: "Password",
@@ -94,9 +94,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
 
                   Text("Forget password ?"),
-
                   SizedBox(height:30),
-
                   Container(
                     height:60,
                     decoration: BoxDecoration(
@@ -106,7 +104,6 @@ class _LoginPageState extends State<LoginPage> {
                     alignment: Alignment.center,
                     child:Text("Sing in"),
                   ),
-
                 ],
               ))
               ),
@@ -121,7 +118,6 @@ void main(){
 }
 
 Widget customText(text) {
-  return Text(
-    text,style: TextStyle(fontSize: 50,),
+  return Text(text,style: TextStyle(fontSize: 50,),
   );
 }
