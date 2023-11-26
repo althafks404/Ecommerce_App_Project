@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:progress_state_button/iconed_button.dart';
@@ -127,7 +128,7 @@ Widget SimilarProduct(customImage,productname,productprice) => InkWell(
     ),
     child:Column(
       children: [
-        Image.network(customImage,fit:BoxFit.cover),
+        CachedNetworkImage(imageUrl: customImage,fit:BoxFit.cover),
         SizedBox(height:30),
         Text(productname,style:TextStyle(fontSize: 20)),
         Text(productprice,style:TextStyle(fontSize: 15))

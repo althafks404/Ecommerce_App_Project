@@ -38,6 +38,8 @@ dependencies:
   salomon_bottom_bar: ^3.3.2
   font_awesome_flutter: ^10.6.0
   progress_state_button: ^1.0.4
+  cached_network_image: ^3.3.0
+  flutter_slidable: ^3.0.1
 
 
   # The following adds the Cupertino Icons font to your application.
